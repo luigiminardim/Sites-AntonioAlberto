@@ -1,0 +1,19 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* root variables */
+:root {
+    /* colors */
+    --color-primary: #223555;
+    --color-primary-on: #FFFFFF;
+
+    --color-secondary: #B89B5E;
+    --color-secondary-on: #FFFFFF;
+
+    --color-background: #FFFFFF;
+    --color-background-on: #000000;
+}
