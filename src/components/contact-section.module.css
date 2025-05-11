@@ -9,7 +9,7 @@
   align-items: flex-start;
   gap: 2rem;
 
-  background-color: #142240DF;
+  background-color: #142240df;
 }
 
 .background {
@@ -53,64 +53,180 @@
 }
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
 }
 
 .contact-form > input {
-    width: 16rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  width: 16rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .contact-form > input {
-    max-width: 16rem;
-    
-    border-style: solid;
-    border-width: 0.2rem;
-    border-color: var(--color-secondary);
-    
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  max-width: 16rem;
 
-    background-color: transparent;
+  border-style: solid;
+  border-width: 0.2rem;
+  border-color: var(--color-secondary);
 
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    font-weight: 300;
-    color: var(--color-secondary);
-    
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  background-color: transparent;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-secondary);
 }
 
 .contact-form > input:focus-visible {
-    outline-style: solid;
-    outline-width:  0.1rem;
-    outline-color: var(--color-secondary);
+  outline-style: solid;
+  outline-width: 0.1rem;
+  outline-color: var(--color-secondary);
 }
 
 .contact-form > input::placeholder {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--color-secondary);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-secondary);
 }
 
 .contact-form > button {
-    width: 16rem;
-    
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  cursor: pointer;
 
-    color: var(--color-secondary-on);
-    background-color: var(--color-secondary);
+  width: 16rem;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  color: var(--color-secondary-on);
+  background-color: var(--color-secondary);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  border-width: 0px;
+}
+
+.contact-form > button:focus-visible {
+  outline-style: solid;
+  outline-width: 0.1rem;
+  outline-color: var(--color-secondary);
+}
+
+.contact-form > button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.dialog__backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+}
+
+.dialog__backdrop[data-state="closed"] {
+  display: none;
+}
+
+.dialog__positioner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dialog__content {
+  width: 32rem;
+
+  border-radius: 0.2rem;
+  border-width: 0.2rem;
+  border-style: solid;
+  border-color: var(--color-secondary);
+
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  background-color: var(--color-primary);
+  
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.dialog__title {
+  text-align: center;
+  font-family: 'Montserrat' sans-serif;
+  font-size: 2rem;
+
+  color: var(--color-secondary);
+  font-weight: 300;
+}
+
+.dialog__description {
+  font-family: 'Montserrat' sans-serif;
+  font-size: 1rem;
+
+  color: var(--color-secondary);
+}
+
+.dialog__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dialog__close-trigger {
+  cursor: pointer;
+
+  width: 16rem;
+
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  color: var(--color-secondary-on);
+  background-color: var(--color-secondary);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  border-width: 0px;
+}
+
+
+.dialog__close-trigger:focus-visible {
+  outline-style: solid;
+  outline-width: 0.1rem;
+  outline-color: var(--color-secondary);
 }
