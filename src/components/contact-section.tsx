@@ -31,7 +31,7 @@ export function ContactSection() {
   };
 
   return (
-    <section class={styles["contact-section"] + " screen-container"}>
+    <section class={styles["contact-section"] + " screen-container"} id="contato">
       <img
         class={styles["background"]}
         src="/contact-background.jpg"

@@ -32,7 +32,7 @@ function TeamMemberArticle(props: {
   description: string;
 }) {
   return (
-    <article class={styles["card"]}>
+    <article class={styles["card"]} id="equipe">
       <header>
         <img src={props.imageSrc} alt={`Foto do ${props.name}`} />
         <h3>{props.name}</h3>
