@@ -1,7 +1,6 @@
 .banner-section {
     position: relative;
-    height: 50vw;
-    max-height: 563px;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
