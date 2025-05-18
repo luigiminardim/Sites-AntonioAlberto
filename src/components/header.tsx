@@ -1,6 +1,6 @@
 import { TbMailFilled, TbPhoneFilled } from "solid-icons/tb";
 import styles from "./header.module.css";
-import { ImPhone } from "solid-icons/im";
+import { ImPhone, ImWhatsapp } from "solid-icons/im";
 import { FaBrandsInstagram, FaBrandsLinkedin } from "solid-icons/fa";
 
 export function Header() {
@@ -9,19 +9,19 @@ export function Header() {
       <div class={styles["top-bar"] + " screen-container"}>
         <ul class={styles["top-bar-contact-list"]}>
           <li>
-            <a href="mailto:contato@antonioalberto.adv.br">
-              <TbMailFilled class={styles["top-bar-item-icon"]} />
-              CONTATO@ANTONIOALBERTO.ADV.BR
-            </a>
-          </li>
-          <li>
-            <a href="tel:+556133270102">
-              <ImPhone class={styles["top-bar-item-icon"]} />
+            <a href="https://wa.me/556133270102" target="_blank">
+              <ImWhatsapp class={styles["top-bar-item-icon"]} />
               (61) 3327-0102
             </a>
           </li>
-        </ul>
-        <ul class={styles["top-bar-social-list"]}>
+          <hr class={styles["display-lg-none"]} />
+          <li>
+            <a href="mailto:contato@antonioalberto.adv.br">
+              <TbMailFilled class={styles["top-bar-item-icon"]} />
+              <span class={styles['display-mobile-none']}>CONTATO@ANTONIOALBERTO.ADV.BR</span>
+            </a>
+          </li>
+          <hr class={styles['display-mobile-none']} />
           <li>
             <a href="https://www.instagram.com/antonioalbertoadvocacia/">
               <FaBrandsInstagram class={styles["top-bar-item-icon"]} />
