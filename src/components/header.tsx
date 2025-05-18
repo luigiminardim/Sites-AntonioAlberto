@@ -18,7 +18,7 @@ export function Header() {
           <li>
             <a href="mailto:contato@antonioalberto.adv.br">
               <TbMailFilled class={styles["top-bar-item-icon"]} />
-              <span class={styles['display-mobile-none']}>CONTATO@ANTONIOALBERTO.ADV.BR</span>
+              <span class={styles['display-mobile-none']}>contato@antonioalberto.adv.br</span>
             </a>
           </li>
           <hr class={styles['display-mobile-none']} />

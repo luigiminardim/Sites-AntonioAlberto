@@ -5,11 +5,10 @@
 
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
   gap: 3rem;
-}
-
-.logo-container {
+  row-gap: 3rem;
 }
 
 .logo-container img {
@@ -47,11 +46,20 @@
   color: var(--color-primary-on);
 }
 
+.ul-container > ul > li > a > svg {
+  font-size: 1.25rem;
+  color: var(--color-primary-on);
+}
+
 .ul-container > ul > li > a {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+
   text-decoration: none;
   color: var(--color-primary-on);
 }
 
 .ul-container > ul > li > a:hover {
-    text-decoration: underline;
-  }
+  text-decoration: underline;
+}

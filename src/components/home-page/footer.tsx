@@ -1,4 +1,7 @@
+import { ImWhatsapp } from "solid-icons/im";
 import styles from "./footer.module.css";
+import { TbMailFilled } from "solid-icons/tb";
+import { FaBrandsInstagram, FaBrandsLinkedin } from "solid-icons/fa";
 
 export function Footer() {
   return (
@@ -39,8 +42,30 @@ export function Footer() {
         </ul>
         <h3>CONTATO</h3>
         <ul>
-          <li>(61) 3327-0102</li>
-          <li>CONTATO@ANTONIOALBERTO.ADV.BR</li>
+          <li>
+            <a href="https://wa.me/556133270102" target="_blank">
+              <ImWhatsapp />
+              (61) 3327-0102
+            </a>
+          </li>
+          <li>
+            <a href="mailto:contato@antonioalberto.adv.br">
+              <TbMailFilled />
+              contato@antonioalberto.adv.br
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/antonioalbertoadvocacia/">
+              <FaBrandsInstagram />
+              antonioalbertoadvocacia
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/antonio-alberto-do-vale-cerqueira-advocacia/">
+              <FaBrandsLinkedin />
+              antonio-alberto-do-vale-cerqueira-advocacia
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
