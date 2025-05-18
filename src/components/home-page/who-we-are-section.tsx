@@ -5,16 +5,16 @@ export function WhoWeAreSection() {
   return (
     <section class={styles["who-we-are-section"]} id="quem-somos">
       <SectionHeader title="Quem Somos" />
-      <div class={styles["body"]}>
-        <div>
+      <div class={styles["body"] + " screen-container"}>
+        <div class={styles["image-container"]}>
           <img
             class={styles["image"]}
             src="/who-we-are.png"
             alt="Foto com o nosso grupo de Advogados"
           />
         </div>
-        <div style={{"padding-left": 0}}>
-          <div class={styles["text-container"] + " screen-container"}>
+        <div class={styles["text-container"]}>
+          <div class={styles["text"]}>
             <p>
               Atendemos pessoas naturais e empresas, com foco na melhor solução
               possível e desejável para cada caso. Todo cliente é único e deve
