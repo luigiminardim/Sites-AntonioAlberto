@@ -16,16 +16,16 @@ export function Footer() {
             <a href="/">INÍCIO</a>
           </li>
           <li>
-            <a href="#quem-somos">QUEM SOMOS</a>
+            <a href="/#quem-somos">QUEM SOMOS</a>
           </li>
           <li>
-            <a href="#nossas-epecialidades">NOSSAS ESPECIALIDADES</a>
+            <a href="/#nossas-epecialidades">NOSSAS ESPECIALIDADES</a>
           </li>
           <li>
-            <a href="#equipe">EQUIPE</a>
+            <a href="/#equipe">EQUIPE</a>
           </li>
           <li>
-            <a href="#contato">CONTATO</a>
+            <a href="/#contato">CONTATO</a>
           </li>
         </ul>
       </div>

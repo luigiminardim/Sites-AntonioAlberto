@@ -1,0 +1,96 @@
+.container {
+  --logo-height: 7rem;
+
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+
+  padding-top: calc(var(--logo-height) + 2rem);
+  padding-bottom: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  height: var(--logo-height);
+}
+
+.background {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.inner-container {
+  width: 100ch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+
+.text-container > h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: var(--color-background);
+  font-weight: 600;
+}
+
+.text-container > p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: var(--color-background);
+  font-weight: 600;
+}
+
+.button {
+  cursor: pointer;
+
+  padding: 1rem 2rem;
+
+  color: var(--color-primary-on);
+  background-color: var(--color-primary);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  border-width: 0px;
+}
+
+.button > svg {
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+
+.button:focus-visible {
+  outline-style: solid;
+  outline-width: 0.1rem;
+  outline-color: var(--color-primary);
+}
+
+.button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

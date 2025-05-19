@@ -1,0 +1,129 @@
+.description-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+
+.body {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background-color: var(--color-background);
+  gap: 2rem;
+}
+
+.image-container {
+  flex: 1 0;
+  flex-basis: 0;
+  flex-grow: 1;
+  display: flex;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(50% - 2rem);
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-container {
+  flex: 1 0;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  width: 100%;
+  max-width: 40ch;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--color-primary);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  text-align: justify;
+}
+
+@media screen and (max-width: 48rem) {
+  .image-container {
+    display: none;
+  }
+}
+
+.text-container > p {
+  max-width: 40ch;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-primary);
+
+  text-align: justify;
+}
+
+@media screen and (max-width: 48rem) {
+  .body > div.image-container {
+    display: none;
+  }
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.button {
+  cursor: pointer;
+
+  padding: 0.5rem 1rem;
+
+  color: var(--color-secondary-on);
+  background-color: var(--color-secondary);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  border-width: 0px;
+}
+
+.button > svg {
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+.button:focus-visible {
+  outline-style: solid;
+  outline-width: 0.1rem;
+  outline-color: var(--color-primary);
+}
+
+.button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
