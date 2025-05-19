@@ -1,4 +1,4 @@
-import { SectionHeader } from "../section-header";
+import { SectionHeader } from "../../components/section-header";
 import styles from "./team-section.module.css";
 
 export function TeamSection() {

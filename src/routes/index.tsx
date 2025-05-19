@@ -1,4 +1,4 @@
-import { HomePage } from "~/components/home-page";
+import { HomePage } from "~/pages/home-page";
 
 export default function Index() {
   return <HomePage />;
