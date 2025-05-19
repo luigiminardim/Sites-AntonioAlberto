@@ -6,12 +6,12 @@ export function SpecialitiesSection() {
     <section class={styles["specialities-section"]} id="nossas-epecialidades">
       <SectionHeader title="Nossas Especialidades" />
       <div class={styles["grid"] + " screen-container"}>
-        <SpecialityCard title="Cobrança e recuperação de ativos" />
-        <SpecialityCard title="Contratos empresariais" />
-        <SpecialityCard title="Proteção de dados pessoais (LGPD)" />
-        <SpecialityCard title="Cobrança e recuperação de ativos" />
-        <SpecialityCard title="Contratos empresariais" />
-        <SpecialityCard title="Proteção de dados pessoais (LGPD)" />
+        <SpecialityCard title="Direito Penal e Administrativo Sancionatório" />
+        <SpecialityCard title="Tribunais Superiores e Tribunais Regionais Federais" />
+        <SpecialityCard title="Direito Civil, Família e Sucessões" />
+        <SpecialityCard title="Direito Imobiliário e Condominial" />
+        <SpecialityCard title="Direito Empresarial e Societário" />
+        <SpecialityCard title="Resolução de Conflitos e Causas de Grande Complexidade" />
       </div>
     </section>
   );

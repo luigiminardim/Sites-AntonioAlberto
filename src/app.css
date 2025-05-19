@@ -12,10 +12,10 @@ html {
 /* root variables */
 :root {
     /* colors */
-    --color-primary: #223555;
+    --color-primary: #08073b;
     --color-primary-on: #FFFFFF;
 
-    --color-secondary: #B89B5E;
+    --color-secondary: #DB9F59;
     --color-secondary-on: #FFFFFF;
 
     --color-background: #FFFFFF;

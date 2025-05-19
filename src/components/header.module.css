@@ -58,8 +58,8 @@
 
 
 .body {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
     display: flex;
     flex-direction: row;
@@ -68,7 +68,8 @@
 }
 
 .logo-image {
-    height: 5rem;
+    height: 7rem;
+    filter: drop-shadow(16px 16px 16px rgba(0, 0, 0, 0.5));
 }
 
 .nav {

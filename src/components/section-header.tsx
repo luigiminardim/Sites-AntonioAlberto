@@ -11,7 +11,7 @@ export function SectionHeader({ title }: SectionHeaderProps) {
       <span class={styles['icon-container']}>
         <span class={styles['horizontal-bar']}></span>
         <span class={styles['circle']}>
-            <img src="/logo-branco.png" alt="Logo Branca"/>
+            <img src="/logo-white.png" alt="Logo Branca"/>
         </span>
       </span>
     </header>

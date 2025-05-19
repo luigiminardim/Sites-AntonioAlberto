@@ -34,7 +34,7 @@ export function ContactSection() {
     <section class={styles["contact-section"] + " screen-container"} id="contato">
       <img
         class={styles["background"]}
-        src="/contact-background.jpg"
+        src="/contact-section/background.jpg"
         alt="Fundo do Formulário de Contato"
       />
       <header>

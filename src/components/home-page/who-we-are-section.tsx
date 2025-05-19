@@ -16,15 +16,25 @@ export function WhoWeAreSection() {
         <div class={styles["text-container"]}>
           <div class={styles["text"]}>
             <p>
-              Atendemos pessoas naturais e empresas, com foco na melhor solução
-              possível e desejável para cada caso. Todo cliente é único e deve
-              receber a máxima atenção.
+              Fundada em abril de 1998, a Antonio Alberto do Vale Cerqueira
+              Advocacia oferece uma advocacia diferenciada, com foco na
+              humanização e na profunda compreensão das necessidades de cada
+              cliente. Ao longo de mais de duas décadas, desenvolvemos expertise
+              em consultoria estratégica, gestão de crises e atuação contenciosa
+              de alta complexidade em diversos tribunais e órgãos
+              administrativos.
             </p>
             <p>
-              Nosso propósito não é apenas fazer o direito de nosso cliente ser
-              reconhecido e respeitado, mas também que o seja no tempo mais
-              breve possível, dando-lhe, ao longo do caminho, todo o amparo
-              necessário, com a indispensável transparência.
+              Nossa vasta e comprovada experiência no acompanhamento de
+              processos nos Tribunais Superiores, TCU, Justiça Federal,
+              Tribunais Estaduais (TJDFT, TJSP, TJRJ, TJMT, TJMG, TJGO e
+              outros), justiça do trabalho e em órgãos da Administração direta e
+              indireta, especialmente na segurança pública estadual e federal,
+              nos habilita a lidar com os desafios jurídicos mais intrincados.
+              Essa trajetória nos confere um know-how essencial para prestar
+              assistência jurídica de excelência em diversas áreas do Direito,
+              com notável especialização em causas que exigem um olhar
+              estratégico e soluções inovadoras.
             </p>
           </div>
         </div>

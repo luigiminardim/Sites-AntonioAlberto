@@ -9,26 +9,44 @@ export function Header() {
       <div class={styles["top-bar"] + " screen-container"}>
         <ul class={styles["top-bar-contact-list"]}>
           <li>
-            <a href="https://wa.me/556133270102" target="_blank">
+            <a
+              href="https://wa.me/556133270102"
+              target="_blank"
+              aria-label="Whatsapp"
+            >
               <ImWhatsapp class={styles["top-bar-item-icon"]} />
               (61) 3327-0102
             </a>
           </li>
           <hr class={styles["display-lg-none"]} />
           <li>
-            <a href="mailto:contato@antonioalberto.adv.br">
+            <a
+              href="mailto:contato@antonioalberto.adv.br"
+              target="_blank"
+              aria-label="e-mail"
+            >
               <TbMailFilled class={styles["top-bar-item-icon"]} />
-              <span class={styles['display-mobile-none']}>contato@antonioalberto.adv.br</span>
+              <span class={styles["display-mobile-none"]}>
+                contato@antonioalberto.adv.br
+              </span>
             </a>
           </li>
-          <hr class={styles['display-mobile-none']} />
+          <hr class={styles["display-mobile-none"]} />
           <li>
-            <a href="https://www.instagram.com/antonioalbertoadvocacia/">
+            <a
+              href="https://www.instagram.com/antonioalbertoadvocacia/"
+              target="_blank"
+              aria-label="Whatsapp"
+            >
               <FaBrandsInstagram class={styles["top-bar-item-icon"]} />
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/company/antonio-alberto-do-vale-cerqueira-advocacia/">
+            <a
+              href="https://www.linkedin.com/company/antonio-alberto-do-vale-cerqueira-advocacia/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
               <FaBrandsLinkedin class={styles["top-bar-item-icon"]} />
             </a>
           </li>

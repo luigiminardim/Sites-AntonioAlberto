@@ -7,10 +7,7 @@ export function Footer() {
   return (
     <footer class={styles["footer"] + " screen-container"}>
       <div class={styles["logo-container"]}>
-        <img
-          src="/logo-white.png"
-          alt="Logo Antônio Alberto do Vale Cerqueira"
-        />
+        <img src="/logo.png" alt="Logo Antônio Alberto do Vale Cerqueira" />
       </div>
       <div class={styles["ul-container"]}>
         <h3>MAPA DO SITE</h3>
@@ -36,32 +33,49 @@ export function Footer() {
         <h3>ENDEREÇO</h3>
         <ul>
           <li>
-            RUA MARIA CARMEN RODRIGUES SAKER, 90, SALA 1009 <br />
-            ALTO DA BOA VISTA, SOROCABA-SP
+            SHIS QL. 05, Conjunto 5 <br />
+            Casa 17, Lago Sul, Brasília - DF <br />
+            CEP: 71620-055
           </li>
         </ul>
         <h3>CONTATO</h3>
         <ul>
           <li>
-            <a href="https://wa.me/556133270102" target="_blank">
+            <a
+              href="https://wa.me/556133270102"
+              target="_blank"
+              aria-label="WhatsApp"
+            >
               <ImWhatsapp />
               (61) 3327-0102
             </a>
           </li>
           <li>
-            <a href="mailto:contato@antonioalberto.adv.br">
+            <a
+              href="mailto:contato@antonioalberto.adv.br"
+              target="_blank"
+              aria-label="e-mail"
+            >
               <TbMailFilled />
               contato@antonioalberto.adv.br
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/antonioalbertoadvocacia/">
+            <a
+              href="https://www.instagram.com/antonioalbertoadvocacia/"
+              target="_blank"
+              aria-label="Instagram"
+            >
               <FaBrandsInstagram />
-              antonioalbertoadvocacia
+              @antonioalbertoadvocacia
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/company/antonio-alberto-do-vale-cerqueira-advocacia/">
+            <a
+              href="https://www.linkedin.com/company/antonio-alberto-do-vale-cerqueira-advocacia/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
               <FaBrandsLinkedin />
               antonio-alberto-do-vale-cerqueira-advocacia
             </a>

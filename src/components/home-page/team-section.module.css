@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: stretch;
     justify-content: space-evenly;
     row-gap: 4rem;
     column-gap: 3rem;
@@ -26,8 +27,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 3rem;
+    justify-content: flex-start;
+    gap: 1rem;
 }
 
 .card>header {
@@ -41,6 +42,7 @@
     width: 100%;
     height: 18rem;
     object-fit: cover;
+    object-position: top;
     overflow: hidden;
 
     border-bottom-style: solid;
@@ -49,16 +51,16 @@
 }
 
 .card>header>h3 {
-    font-family: "Lora", serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 2rem;
-    color: #9A9999;
+    color: var(--color-background-on);
     text-align: center;
 }
 
 .card>p {
     font-family: "Montserrat", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1rem;
-    color: var(--color-secondary);
+    color: var(--color-background-on);
 }

@@ -10,7 +10,7 @@ export function BannerSection() {
       />
       <div class={styles["surface"]}>
         <p>
-          Nosso foco é<br />o seu <b>direito.</b>
+        Complexidade Jurídica,<br />Atendimento <b>Humano</b>
         </p>
         <hr />
       </div>
