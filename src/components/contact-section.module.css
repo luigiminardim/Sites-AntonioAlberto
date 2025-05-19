@@ -37,7 +37,6 @@
 }
 
 .contact-section > header > h2 {
-  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: 300;
@@ -53,22 +52,22 @@
 }
 
 .contact-form {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.5rem;
 }
 
-.contact-form > input {
-  width: 16rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+@media screen and (min-width: 48rem) {
+  .contact-form {
+    width: 16rem;
+  }
 }
 
+
 .contact-form > input {
-  max-width: 16rem;
+  width: 100%;
 
   border-style: solid;
   border-width: 0.2rem;
@@ -103,7 +102,7 @@
 .contact-form > button {
   cursor: pointer;
 
-  width: 16rem;
+  width: 100%;
 
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -180,7 +179,7 @@
 }
 
 .dialog__title {
-  text-align: center;
+  /* text-align: center; */
   font-family: 'Montserrat' sans-serif;
   font-size: 2rem;
 

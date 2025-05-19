@@ -44,7 +44,7 @@ export function ContactSection() {
           <span class={styles["medium"]}>
             Agende uma <b>reunião</b>
           </span>
-          , vamos conversar, <br /> sobre o seu caso e tirar suas{" "}
+          , vamos conversar, sobre o seu caso e tirar suas{" "}
           <b>dúvidas!</b>
         </h2>
       </header>
