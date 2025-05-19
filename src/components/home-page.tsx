@@ -18,8 +18,8 @@ export function HomePage() {
         <SpecialitiesSection />
         <TeamSection />
         <ContactSection />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }

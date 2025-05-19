@@ -5,7 +5,7 @@
  */
 
 .screen-container {
-  --screen-container_padding: 1.5rem;
+  --screen-container_padding: 1rem;
   width: 100%;
   padding-right: var(--screen-container_padding);
   padding-left: var(--screen-container_padding);
@@ -13,6 +13,7 @@
 
 @media screen and (min-width: 90rem) {
   .screen-container {
+    --screen-container_padding: 1.5rem;
     --screen-container_elastic-padding: calc(
       (100vw - 90rem - 2 * var(--screen-container_padding)) / 2
     );
