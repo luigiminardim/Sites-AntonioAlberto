@@ -1,0 +1,153 @@
+.container {
+  width: 100%;
+
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: var(--color-primary);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.header > h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--color-primary-on);
+}
+
+.header > h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+
+.header > hr {
+  margin-top: 3rem;
+  width: 70%;
+  border-width: 0.2rem;
+  border-style: solid;
+  border-color: var(--color-secondary);
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.accordion [data-part="item"] {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.accordion [data-part="item-trigger"] {
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: #d9d9d9;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  text-align: left;
+}
+
+.accordion [data-part="item-indicator"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+}
+
+.accordion [data-part="item-content"] {
+  padding: 1rem;
+  background-color: var(--color-primary-on);
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: var(--color-background-on);
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.button {
+  cursor: pointer;
+
+  padding: 0.5rem 1rem;
+
+  color: var(--color-secondary-on);
+  background-color: var(--color-secondary);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  border-width: 0px;
+}
+
+.button > svg {
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+.button:focus-visible {
+  outline-style: solid;
+  outline-width: 0.1rem;
+  outline-color: var(--color-primary);
+}
+
+.button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

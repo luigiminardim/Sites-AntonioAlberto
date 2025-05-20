@@ -1,7 +1,8 @@
 import { ContactSection } from "~/components/contact-section";
 import { Footer } from "../../components/footer";
-import { LandingPageHeader } from "./landing-page-header";
+import { LandingPageHeader } from "~/components/landing-page-header";
 import { DescriptionSection } from "./criminal-landing-page/description-section";
+import { QuestionSection } from "~/components/questions-section";
 
 export function CriminalLandingPage() {
   return (
@@ -9,6 +10,7 @@ export function CriminalLandingPage() {
       <main>
         <LandingPageHeader />;
         <DescriptionSection />
+        <QuestionSection />
         <ContactSection />
       </main>
       <Footer />
